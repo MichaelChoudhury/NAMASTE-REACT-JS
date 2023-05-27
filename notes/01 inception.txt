@@ -1,0 +1,38 @@
+React - very popular JS library
+react is very fast
+make own notes
+code along
+own github repo - assignments
+use Chrome and dev console
+VS code
+emmet
+h1 tag created by JS and injected into root
+cdn react -> only JS files - by facebook engineers
+React vs ReactDom - create element vs create root
+all react code runs inside the root - root.render()
+react original philosophy - use JS to manipulate DOM 
+most costly browser operation - DOM tree changes
+react element is a JS object
+render converts it to h1 tag
+ReactElement(Object) => HTML(Browser Understands)
+place siblings in an array
+jsx solves above ugliness - makes it easy to create tags - no need to use React.createElement
+but react can be written without jsx
+order of cdn script files matters - must be before App.js
+root.render method will overwrite existing tags; replaced not appended; only affects div id root
+library vs framework - react can be applied also only to a portion of the page since not a full-fledged framework
+react can work in existing app - only in a small portion of the app - eg apply to just a card 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
