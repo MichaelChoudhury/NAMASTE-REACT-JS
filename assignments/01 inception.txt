@@ -1,0 +1,35 @@
+A Content Delivery Network (CDN) is a system of distributed servers (network) that deliver web content or services to a user, based on the user's geographic location, the origin of the webpage and the content delivery server.
+
+The main goal of a CDN is to provide high availability and high performance by distributing the service spatially relative to end-users. CDNs came into existence in the late 1990s as a means for alleviating the performance bottlenecks of the Internet, even as the Internet was starting to become a mission-critical medium for people and enterprises.
+
+Here are some key uses of Content Delivery Networks:
+
+Speed: CDNs can significantly reduce the load time of websites by caching their content in multiple geographical locations. When a user makes a request, the content is delivered from the nearest server (also known as an edge server), which significantly reduces the round-trip time.
+
+Scalability: CDNs can handle spikes in traffic that could otherwise overwhelm a single server. By spreading the traffic across many servers, CDNs can handle a much larger volume of simultaneous requests.
+
+Reliability: If one server goes down, a CDN can automatically redirect the traffic to another server. This makes websites using CDNs much more reliable and less likely to experience downtime.
+
+Security: CDNs can provide additional security measures such as DDoS protection and SSL certificates. They can also provide firewall functionality and mitigation against various types of cyberattacks.
+
+Reduced Bandwidth Cost: CDNs can help reduce the amount of data an origin server must provide, hence reducing hosting costs for website owners.
+
+SEO: Faster website speed and uptime can contribute to higher search engine rankings. This is because search engines consider page load speed as a ranking factor.
+
+CDNs are used widely across the internet and are especially useful for businesses that have users spread out across different regions of the world, for media companies that deliver large files (like video streaming platforms), for online gaming, and for any site where performance and reliability are critical.
+
+==================================================
+
+
+
+CORS stands for Cross-Origin Resource Sharing. It's a mechanism that allows many resources (e.g., fonts, JavaScript, etc.) on a web page to be requested from another domain outside the domain from which the resource originated.
+
+In more detail, CORS is a specification that provides a method to tell browsers to give a web application running at one origin access to selected resources from a different origin. An origin is defined as a combination of URI scheme (http, https), hostname (www.example.com), and port number (80, 443).
+
+Here's a bit of background on why CORS is needed: For security reasons, web browsers prohibit web pages from making requests to a different domain than the one the web page came from. This is known as the same-origin policy. While this policy is vital for security, there are many legitimate reasons why a web page might need to make a request to a different domain.
+
+That's where CORS comes into play. CORS gives web servers cross-domain access controls, which enable secure cross-domain data transfers. Modern browsers use CORS in an API container - such as XMLHttpRequest or Fetch - to mitigate risks of cross-origin HTTP requests.
+
+The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers. To initiate a cross-origin request, a server includes additional CORS-specific headers in its response to the browser. These headers indicate whether the server allows the cross-origin request. The server can specify which sites are allowed, which HTTP methods, headers, etc.
+
+In a nutshell, CORS is a crucial security feature that manages cross-origin requests while maintaining the security of your data.
