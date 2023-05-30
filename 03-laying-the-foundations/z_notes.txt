@@ -1,0 +1,83 @@
+npm run start/build
+npm start = npm run start
+react elements are roughly equivalent to DOM elements, but they are not html elements
+react element is an object, but becomes an html element when rendered on to the DOM
+React.createElement() and ReactDOM.createRoot() - clumsy - so Facebook created JSX
+jsx - js syntax to create browser elements more easily
+jsx is not part of react - react can be written without jsx
+jsx is a convention merging html and js
+jsx is not html inside javascript - jsx is an html-like syntax or xml-like
+code is written for humans first then for machines - thus jsx
+js engine does not understand jsx only all versions of ECMA 6 script - pure javascript
+parcel (using babel) transpiles jsx to js before it reaches js engine
+parcel installed babel (not created by facebook)
+jsx code transpiled by babel to React.createElement (js object) then converted to html element in browser
+babel transpiles ES6 code for older versions of browsers
+jsx - className
+tabindex -> tabIndex - camel case
+jsx multiple lines = must wrap inside parenthesis so babel knows start and end of jsx
+extensions: prettier, bracket pair colorizer, better comments, ESLint
+react components - title, cards, header, search bar, buttons, etc.
+2 types of components - class-based (old way, legacy) and functonal (new)
+react functional component is a normal js function which returns some JSX code (a react element)
+component name starts with uppercase
+for one line - can remove 'return' and brackets
+if 'return' not used then () and not {}
+with smart students teachers become smarter
+render component - < /> ... syntax babel understands
+babel is a JavaScript compiler - converts jsx to React.createElement
+parcel is manager of babel - once code saved, automatically compiles 
+    - reads one by one characters <, abstracts AST, tokenisation
+jsx attributes always camelCase
+functional component is a javascript function which returns a react element to be transpiled to React.createElement
+if jsx on one line - don't need 'return' hence no curly braces {} needed either
+most developers don't write 'return'
+jsx can be nested
+react element vs component
+root.render() converts all to html
+component composition - component within component
+jsx( {} ) inject any js expression - write js inside jsx
+can put react element inside a component using {}
+cannot use component before initialisation
+can compose anything into anything - react element, component, variable
+api - malicious data/code injectecd - run js in browser - cross site scripting attack - read storage, data, cookies
+jsx takes care of these injection issues - by escaping them - sanitises the data if in {} curly braces
+<Title /> can be written as <Title></Title> or even {Title()} - just call a function inside JSX
+JSX can have only one rrot level parent element
+if there are 2 containers - use another div to enclose or use react fragments at root level
+React.Fragment - just one parent of the JSX - behaves like an empty tag - ugly - so use empty JSX tag - <></> 
+can there be many roots?
+jsx makes code readble - better than React.createElement
+
+
+
+
+
+
+
+
+
+1:28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

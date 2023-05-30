@@ -1,0 +1,34 @@
+{
+  "name": "namaste-react-js",
+  "version": "1.0.0",
+  "description": "This is the Namaste React course",
+
+  "scripts": {
+    "start": "parcel 03-laying-the-foundations/index.html",
+    "build": "parcel build 03-laying-the-foundations/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelChoudhury/NAMASTE-REACT-JS.git"
+  },
+  "keywords": [],
+  "author": "Michael Choudhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelChoudhury/NAMASTE-REACT-JS/issues"
+  },
+  "homepage": "https://github.com/MichaelChoudhury/NAMASTE-REACT-JS#readme",
+  "devDependencies": {
+    "parcel": "^2.9.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ]
+}
