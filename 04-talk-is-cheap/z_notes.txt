@@ -1,0 +1,30 @@
+food-ordering app - swiggy or zomato
+plan first - UI mockup - wireframe
+low-level planning - components
+inline style - style={{}}    as a js object
+{{}}  first pair for javascript, second pair for object
+inline style not preferred way
+justify-content: space-between
+list-style-type: none  - remove bullets
+gray - #f0f0f0
+kind of writing CSS in js
+material UI, tailwind
+props (properties) are simply arguments to a function
+passing a prop (argument) to a component (function)
+props is just a javascript object
+to pass data dynamically to a component, pass it as a prop
+destructure props on the fly ({  ,  })
+backend data comes in the form of json
+JSON viewer - chrome extension
+config-driven UI (swiggy offers in bengaluru, kolkata); website is driven by data
+config comes from backend
+https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING
+
+
+
+
+1:26
+
+
+
+

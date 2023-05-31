@@ -4,8 +4,8 @@
   "description": "This is the Namaste React course",
 
   "scripts": {
-    "start": "parcel 03-laying-the-foundations/index.html",
-    "build": "parcel build 03-laying-the-foundations/index.html",
+    "start": "parcel 04-talk-is-cheap/index.html",
+    "build": "parcel build 04-talk-is-cheap/index.html",
     "test": "jest"
   },
   "repository": {
