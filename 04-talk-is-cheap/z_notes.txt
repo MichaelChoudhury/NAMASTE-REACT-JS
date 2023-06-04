@@ -19,11 +19,34 @@ JSON viewer - chrome extension
 config-driven UI (swiggy offers in bengaluru, kolkata); website is driven by data
 config comes from backend
 https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&page_type=DESKTOP_WEB_LISTING
+reusable components - pass dynamic props - production-ready code
+optional chaining with .?
+.join(,)
+js .map() function to loop over list
+react has mark-up + logic
+each child must have unique key property when looping over array of objects 
+react optimises its render cycle - components need unique IDs - so react does not need to render all components
+using indexes as keys if order of items might change is bad practice - anti-pattern 
+use index as id if there is no id - but not recommended
+UI layer and data layer
+cloudinary.com -> CDN 
+
+
+1:54
 
 
 
 
-1:26
+
+
+
+
+
+
+
+
+
+
 
 
 
