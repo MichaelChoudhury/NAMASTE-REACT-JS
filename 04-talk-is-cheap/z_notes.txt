@@ -30,9 +30,11 @@ using indexes as keys if order of items might change is bad practice - anti-patt
 use index as id if there is no id - but not recommended
 UI layer and data layer
 cloudinary.com -> CDN 
+.map()
+unique key property essential for rendering optimisation - else react will re-render all cards if a change is made
 
 
-1:54
+
 
 
 
