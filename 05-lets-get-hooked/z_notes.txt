@@ -1,0 +1,65 @@
+config-driven UI via mapping - config sent by back-end - api controls the web page - live data
+why React when normal HTML/CSS/JavaScript can do it all?
+makes developer's life easier - do more on web page using less code - super powers - large-scale - optimisation 
+react hooks
+best practice is to have separate files for separate components
+src folder convention - source code?
+Parcel will place all code in a single file eventually
+App.js contains root level code
+folder structure up to developer - some create folders for header, footer, etc.
+don't nest too much - folders
+.jsx not necessary - simply .js extension is fine - keep simple - jsx is simply JavaScript 
+import "Header" same as "Header.js"
+don't keep any hard-coded data in compnents folder - create new folder called assets or config or utils or constants or common
+utils - used all across the app - used by any components
+only components start with upper case
+constants in capitals and snake case eg CDN_URL
+deafult export - normal - only 1 default export
+named export - multiple exports from single file - default export with a file name 
+no files more than 100 lines - small - clean components
+onClick takes a callback function - event handler
+onMouseOver - react equivalent for js
+
+<div className="res-container">
+            {listOfRestaurants.map((restaurant) => (
+              <RestaurantCard key={restaurant.data.id} resData={restaurant} />
+            ))}
+        </div>
+***************** .map() - single brackets after => - not curly !!!!!!!
+react keep data and UI layers in sync - update DOM efficiently - virtual dom - reconciliation
+State variable - super powerful react variable - using react hooks 
+hooks are normal pre-built js utility functions
+useState() and useEffect() hooks most important - named imports
+useState(), useState([]), useState(null), useState([{}])
+whwnever a state vaiable updates, react re-renders the component
+react is great at dom manipulation - but relies on other packages for minification, etc.
+diff algorithm - react - reconciliation algo or react fiber
+actual dom is the tags - virtual dom is a representation of actual dom
+virtual dom is made up of react elements or objects or nested objects
+diff algo find out the difference between the previous virtual dom and the updated virtual dom
+updates the dom on every render cycle
+react 16 - react fiber - new way of finding the difference and updating the dom - makes react very fast
+finding difference beween two objects is faster than finding difference between html codes
+react does not touch the dom a lot 
+react fiber is react's core algorithm
+incremental rendering - split between different chunks
+virtual dom is not new - concept existed in software engineering
+react created an algo on top of the virtual DOM
+every time state variable changes - constantly monitoring
+useState is destructuring on the fly:
+  const arr = useState(resList);
+  const [listOfRestaurants, setListOfRestaurants] = arr;
+    const listOfRestaurants = arr[0];
+    const setListOfRestaurants = arr[2];
+
+
+
+
+
+
+
+
+
+
+
+
