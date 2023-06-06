@@ -4,7 +4,7 @@
   "description": "This is the Namaste React course",
 
   "scripts": {
-    "start": "parcel 05-lets-get-hooked/index.html",
+    "start": "parcel 06-exploring-the-world/index.html",
     "build": "parcel build 05-lets-get-hooked/index.html",
     "test": "jest"
   },

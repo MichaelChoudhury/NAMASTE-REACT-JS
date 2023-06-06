@@ -1,0 +1,37 @@
+monolith vs micro-services architecture
+API, UI, Auth, DB, SMS - all in one place = monolith
+Microservices - different services for different jobs - combines to form a big app
+separation of concerns and single-responsibility principle
+microserices interact with each other eg, UI talks to BE, BE talks to AUTH, BE to DB, BE to SMS service
+can have different languages for different Microservices
+services run on their own ports - and these ports can be mapped to their own domain names - URLs - APIs
+how will react UI talk to backend to get data?
+npm start
+2 ways of fetching data via api:
+    page loads - waits - API - Render
+    page loads and Renders UI at the same time - API call - Re-render with data - REACT uses this approach - better UX
+React render cycles are very fast 0 thus two renders are fine
+useEffect hook - a hook is a normal js function - takes 2 arguments - arrow callback function and a dependency array
+useEffect() is called after component renders
+fetch is a superpower given to us by the browser - js engine
+use async await rather than .then etc. - best industry practice
+convert the readable stream to json
+CORS policy - browser blocks calling api from one origin to another origin
+bypass CORS by using CORS chrome extension
+
+*******  https://cors.sh/     ******* cors proxy - works well
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
