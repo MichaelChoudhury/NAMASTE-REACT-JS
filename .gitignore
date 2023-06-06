@@ -2,5 +2,5 @@
 /dist
 .parcel-cache
 /server/node_modules
-/server
+
 
