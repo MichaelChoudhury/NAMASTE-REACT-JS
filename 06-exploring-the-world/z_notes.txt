@@ -19,7 +19,41 @@ convert the readable stream to json
 CORS policy - browser blocks calling api from one origin to another origin
 bypass CORS by using CORS chrome extension
 
-*******  https://cors.sh/     ******* cors proxy - works well
+https://github.com/HarshithaSolai/instafood-server/blob/main/solution.md     cors backend server
+
+https://www.swiggy.com/mapi/restaurants/list/v5?lat=22.572646&lng=88.36389500000001&collection=54802&sortBy=&filters=&type=rcv2&offset=0&carousel=true&third_party_vendor=1
+
+******* make port 3001 public!!! *******      else CORS error and cards won't render     wasted 1 day on this issue
+
+******* listOfRestaurants.map(() => (         use simple brackets NOT braces!!!          wasted 1 day on this issue
+        ))
+
+shimmer ui - load a fake page/skeleton until data is loaded - end-user can anticipate
+conditional rendering
+ternary operator
+js variable don't work in jsx - need state variable
+state variables keep track of updates - whenever state variable changes, react will refresh component 
+  - triggers the reconciliation cycle - re-renders whole header component, not just the login button
+rendering means react calls the function again 
+const - state variable - but is set to new value on re-remder when function invoked
+react is fast beacuse it's great at DOM manipulation
+learn deeply - have curiosity - how? why? when?
+bind input box to a local state variable to track the value of the Input box
+whenever state variable update, React triggers a reconciliation cycle (re-renders the component)
+react has great rendering algorithm - thus can efficiently render many times - as each char is typed in search
+DOM manipulation is very expensive but React is efficient at it - re-renders whole body but only updates the Input box
+react fibre - new reconciliation algorithm - updates only the required portion of the DOM
+code slow - life lesson - fast coders spend a lot of time debugging
+
+
+
+
+
+
+
+
+
+
 
 
 
