@@ -2,10 +2,9 @@
   "name": "namaste-react-js",
   "version": "1.0.0",
   "description": "This is the Namaste React course",
-
   "scripts": {
-    "start": "parcel 06-exploring-the-world/index.html",
-    "build": "parcel build 05-lets-get-hooked/index.html",
+    "start": "parcel 07-finding-the-path/index.html",
+    "build": "parcel build 07-finding-the-path/index.html",
     "test": "jest"
   },
   "repository": {
@@ -25,7 +24,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.0"
   },
   "browserslist": [
     "last 2 Chrome versions",

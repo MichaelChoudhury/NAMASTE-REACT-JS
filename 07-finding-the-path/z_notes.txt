@@ -1,0 +1,52 @@
+javascript routing library - 
+useEffect and useState
+useEffect called using two arguments - callback function and a dependency array
+useEffect called on the rendering of the component
+dependency array not mandatory but without it will render on every component render
+with dependency array, useEffect called only once on initial render when the component loads
+if something on dependency array, useEffect called only when dependency changes
+always call useState inside the functional component - its purpose is to create a local state variable
+always call useState at the top to prevent inconsistencies in code; js is a single-threaded synchronous language
+never create useState hook ie state variables inside a conditional eg if ... else; although legal, don't mess with React!
+never create useState within for loops or functions
+create useState at top level of the functional component
+react-router-dom use latest ver 6
+create routing configuration in App.js to create routes
+configuration will tell router what will happen on a specific path
+createBrowserRouter takes a list of paths - an object
+RouterProvider component
+RAFCE
+custom error page
+a function starting with "use" is a hook
+useRouteError - provides more information about error
+children routes
+jsx comments: {/**  comments    */}
+Outlet will be filled by children as per path
+Outlet get replaced by the pages
+links
+never use an anchor tag in React - because it will refresh the whole page
+we can navigate to a new page without reloading the whole page
+link component a super power from react-router-dom - works same as anchor tag
+does not load whole page, only refreshes the component - thus react is an SPA
+everything is a component in react
+2 types of routing in web apps: client(no network call to fetch page) side routing 
+  and server side routing (via network call)
+dynamic routing
+speak while you code - important skill
+
+menu api:
+https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.572646&lng=88.36389500000001&restaurantId=101421&submitAction=ENTER
+
+https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.572646&lng=88.36389500000001&page_type=DESKTOP_WEB_LISTING
+
+https://github.com/HarshithaSolai/instafood-server/blob/main/server.js        ******* HARSHITA *******
+
+GraphQL - makes life easier - deals with over-fetching - load only required data
+
+
+
+1:26 start
+2:00
+
+
+
