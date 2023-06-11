@@ -49,12 +49,20 @@ const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete
 ******* WASTED 2 DAYS on this one!!! Variable name for req.query must be identical to original name in string
         ie. restaurantId = restaurantId    !!! and NOT restaurantId = resId 
 
+Meghana Foods 229
+Hotel Empire 425
+key should be on the parent jsx that is being mapped
+Link uses anchor tag behind the scenes - Link is a wrapper over anchor tag - so page does not refresh
+
+this was all client-side routing
 
 
 
 
 
-1:27
+
+
+
 
 
 
