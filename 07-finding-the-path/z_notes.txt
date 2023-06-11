@@ -45,12 +45,16 @@ https://github.com/HarshithaSolai/instafood-server/blob/main/server.js        **
 
 GraphQL - makes life easier - deals with over-fetching - load only required data
 
+const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${restaurantId}&submitAction=ENTER`;
+******* WASTED 2 DAYS on this one!!! Variable name for req.query must be identical to original name in string
+        ie. restaurantId = restaurantId    !!! and NOT restaurantId = resId 
 
 
 
 
 
-1:26
+
+1:27
 
 
 

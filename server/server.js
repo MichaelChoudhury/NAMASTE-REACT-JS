@@ -44,10 +44,10 @@ app.get('/', (req, res) => {
 
   
   app.get('/api/menu', (req, res) => {
-  const { lat, lng, resId } = req.query;
+  const { lat, lng, restaurantId } = req.query;
   console.log(req.query);
 
-  const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&submitAction=ENTER`;
+  const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${restaurantId}&submitAction=ENTER`;
 
   fetch(url, {
     headers: {
