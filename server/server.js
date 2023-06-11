@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const fetch = require('cross-fetch');
-const bodyParser = require('body-parser');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -9,9 +8,6 @@ const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
-
-//app.use(bodyParser.json());
-//app.use(cors(), bodyParser.json());
 
 app.use(cors());
 
@@ -51,19 +47,13 @@ app.get('/', (req, res) => {
   const { lat, lng, resId } = req.query;
   console.log(req.query);
 
-  /* OLD SWIGGY API
-  const url = `https://www.swiggy.com/dapi/menu/v4/full?lat=${lat}&lng=${lng}&menuId=${menuId}`;
-  */ 
-
-  const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&submitAction=ENTER&restaurantId=${resId}`;
-
+  const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&submitAction=ENTER`;
 
   fetch(url, {
     headers: {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-    
     }
   })
     .then(response => {

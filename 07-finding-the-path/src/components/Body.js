@@ -18,8 +18,6 @@ const Body = () => {
     const data = await fetch(
       `https://michaelchoudhury-bookish-acorn-r964pg5v5g2p4jj-3001.preview.app.github.dev/api/restaurants?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING`,
       
-                                                                 //https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.572646&lng=88.36389500000001&page_type=DESKTOP_WEB_LISTING
-      
       );    
 
   const json = await data.json();

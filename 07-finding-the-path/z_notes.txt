@@ -37,6 +37,8 @@ speak while you code - important skill
 menu api:
 https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.572646&lng=88.36389500000001&restaurantId=101421&submitAction=ENTER
 
+https://michaelchoudhury-bookish-acorn-r964pg5v5g2p4jj-3001.preview.app.github.dev/api/menu?/page-type=REGULAR_MENU&complete-menu=true&lat=22.572646&lng=88.36389500000001&restaurantId=101421&submitAction=ENTER
+
 https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.572646&lng=88.36389500000001&page_type=DESKTOP_WEB_LISTING
 
 https://github.com/HarshithaSolai/instafood-server/blob/main/server.js        ******* HARSHITA *******
@@ -45,8 +47,13 @@ GraphQL - makes life easier - deals with over-fetching - load only required data
 
 
 
-1:26 start
-2:00
+
+
+
+1:26
+
+
+
 
 
 
