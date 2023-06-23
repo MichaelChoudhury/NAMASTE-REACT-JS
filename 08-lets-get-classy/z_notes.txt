@@ -1,0 +1,106 @@
+class-based components is older way - new way is functional components
+but important to learn - old code, interviews, good insights into React and its lifecycle
+functional component is a function that returns a piece of JSX
+class-based component is a normal JavaScript class
+extends React.Component - React will now start tracking it
+render() method will return a piece of JSX which will be displayed in the UI
+class-based component is a class which has a render() method  which returns a piece of JSX which will be converted to HTML and rendered onto the web page
+React.Component comes from React
+props are paramenters - arguments go into this function
+constructor props vs super props
+always this.props.name - for access from anywhere inside the class
+all the props are combined into a single object
+create state variables inside a class-based component
+we use hooks in functional components
+earlier, no hooks or functional components
+loading a class-based component = creating an instance of a class-based component, constructor is called - best place for props and to create state variables
+loading/mounting/invoking a functional component onto a web page
+state is a big object which contains all the state variables
+even in functional components, React uses one big object for state variables behind the scene
+how to update the state variables - 
+never update stata variables directly - use this.setState
+batch up the updates
+lifecycle of class-based components
+loaded or mounted
+when the Class load/ is instantiated, the constructor is called, then render() is called
+first Constructor is called, then Render, then componentDidMount is called = lifecycle of this component
+parent constructor - parent render - child constructor - child render - child componenetDidMount - parent componentDidMount
+componentDidMount is used to make API calls - why? see below comparison
+in functional components API calls made in useEffect because initial render done first before data returned from API - to rebder fast
+if 2 children, parent last to componentDidMount - React is optimising
+
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+constructor called - render called - react updates DOM - componentDidMount called
+render phase - commit phase
+React optimises by batching the render phases of the 2 children, then commit phases also batched
+DOM manipulation is expensive
+diff calculated - reconciliation - batched - dom updated - in single batch
+API calls in calss-based componenets - once render phase done and DOM updated
+
+https://api.github.com/users/michaelchoudhury
+
+in functional component, to fetch data - async function
+in class-based component - use componentDidMount
+initially React uses dummy data to update DOM
+setState - updating happens - render happens once again with new value for state variable
+componentDidUpdate
+setState triggers reconciliation process
+mounting - updating - unmounting
+componentWillUnmount - remove from UI
+
+/****
+* whole life-cycle method 
+* 
+* --- MOUNTING ---
+* 
+* Constructor (dummy)
+* Render (dummy)
+*       <HTML Dummy />
+* Component Did Mount
+*       <API Call>
+*       <this.setState> -> State variable is updated 
+* 
+* ----- UPDATE
+*
+*       render (API data)
+*       <HTML (new API data)>
+*       component Did Update
+*       
+*/
+
+don't say thet useEffect is equivalent to componentDidMount just because of API calls being made there
+don't compare class-based components lifecycle with functional components
+in functional component, if empty dependency array, useEffect is called after each and every render
+in class-based components - prevProps, prevState
+if this.state.count etc.
+React is SPA - single-page app
+use clear interval in componentWillUnmount
+this keyword is shared with all methods of the class
+render - useEffect - useEffect return = unmounting phase
+React lifecycle methods - old React - now a much better way to improve developer experience
+can't use async in useEffect callback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

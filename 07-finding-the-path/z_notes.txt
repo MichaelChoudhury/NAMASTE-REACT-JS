@@ -56,6 +56,7 @@ Link uses anchor tag behind the scenes - Link is a wrapper over anchor tag - so 
 
 this was all client-side routing
 
+shimmer - early return
 
 
 

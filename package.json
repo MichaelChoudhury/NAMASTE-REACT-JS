@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is the Namaste React course",
   "scripts": {
-    "start": "parcel 07-finding-the-path/index.html",
-    "build": "parcel build 07-finding-the-path/index.html",
+    "start": "parcel 08-lets-get-classy/index.html",
+    "build": "parcel 08-lets-get-classy/index.html",
     "test": "jest"
   },
   "repository": {
