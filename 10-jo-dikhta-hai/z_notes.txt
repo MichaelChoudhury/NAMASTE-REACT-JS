@@ -1,0 +1,44 @@
+make app performant, optimise, light-weight, fast, load quickly on page
+write code in a better way
+custom hooks
+single responsibility principle (for each component)- importtant in computer science software engineering
+extract and abstract
+modularity - maintainable and testable (easier to run test cases on small piece of code), readable, reusable
+single responsibility principle - but no hard and fast rule 
+hooks - special javascript functions by React
+use custom hooks to make more modular, reaadable, reusable - extract/abstract
+hooks are utility functions - normal functions
+extract a function from a component and give it to a hook to make code more modular and readable
+custom hook to fetch data - put fetch data logic inside the hook
+hooks are normal utility or helper functions
+separate file for separate hook
+hook name starts with 'use'
+the contract of the hook - input and output
+abstract your logic into a custom hook - create your own custom hook
+online/offline custom hook
+online event listener - to be added only once via useEffect 
+'use' not mandatory but recommended; more readable
+component name starts with capital letter
+linting process errors - linter 
+always do what library recommmends
+Parcel is a bundler - dist - compress and minify - only 1 js file - loaded in browser
+makemytrip
+can't build large-scale production-ready application without bundling - too slow to load - more components - bigger size
+break down into smaller files - don't want thousands of components to load at once - nor a very large single file
+chunking - code-splitting - lazy loading - on-demand loading - dynamic bundling - dynamic import 
+frontend system design - logical separation of bundles - logical chunks
+grocery wll load only when user goes to grocery page - lazy or on-demand loading
+lazy() from React as a named export
+lazy import (not same as the other import) is a function takes a callback function, taking the path of grocery 
+grocery now has its own bundle
+suspense is a component from React library - provide a fallback or placeholder
+reduce app bloating by dynamic import
+small components don't need separate bundling
+distribute application into smaller chunks - to make performant, optimise
+chunking - code splitting - dynamic bundling - lazy loading - on-demand loading - dynamic import
+
+
+
+
+
+
