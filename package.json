@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is the Namaste React course",
   "scripts": {
-    "start": "parcel 10-jo-dikhta-hai/index.html",
-    "build": "parcel 10-jo-dikhta-hai/index.html",
+    "start": "parcel 11-data-is-the-new-oil/index.html",
+    "build": "parcel 11-data-is-the-new-oil/index.html",
     "test": "jest"
   },
   "repository": {

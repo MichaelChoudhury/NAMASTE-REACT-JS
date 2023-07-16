@@ -1,0 +1,52 @@
+shift+option+d+down arrow to  arrow to copy line down
+option+command+down arrow to  edit multiple lines
+command+control+space for emojis
+command+comma for Settings
+
+HOC - higher order component - function that take a component and returns a component (enhanced)
+
+a component is a function that returns a piece of jsx
+
+Restaurantcard now enhanced with a promoted label
+
+higher order components are pure functions - original code unmodified
+
+controlled and uncontrolled components
+
+lifting the state up
+
+UI layer (mainly jsx) is powered by Data layer (state, props, local variables, {} )
+
+data layer logic - performant
+
+accordion
+
+react dev tools chrome
+
+lift state up - give parent power to collapse/expand
+
+controlled and uncontrolled components
+
+how can a child modify the state variable of its parent? - indirectly possible - by passing a function from parent to children
+
+props drilling - context
+
+react has one-way data flow or data stream - top to bottom - like parent to children
+
+react context (global space) - to avoid props drilling
+
+logged-in user or themes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
