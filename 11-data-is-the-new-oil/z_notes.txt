@@ -2,6 +2,7 @@ shift+option+d+down arrow to  arrow to copy line down
 option+command+down arrow to  edit multiple lines
 command+control+space for emojis
 command+comma for Settings
+command+K release, then W - close all tabs
 
 HOC - higher order component - function that take a component and returns a component (enhanced)
 
@@ -36,6 +37,28 @@ react has one-way data flow or data stream - top to bottom - like parent to chil
 react context (global space) - to avoid props drilling
 
 logged-in user or themes
+
+createContext - utility function
+
+multiple contexts possible
+
+no hooks in class-based components - need to use UserContext.Consumer component
+
+to modify context use UserContext.Provider  -  wrap whole app in it if the value is needed everywhere
+
+context is super powerful for small and mid-sized apps
+
+redux is not in react - redux thunks (middleware)
+
+redux tool kit - RTK
+
+
+
+
+
+
+
+
 
 
 
