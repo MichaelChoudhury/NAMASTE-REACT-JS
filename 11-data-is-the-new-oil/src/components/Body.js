@@ -18,7 +18,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      `https://michaelchoudhury-bookish-acorn-r964pg5v5g2p4jj-3002.preview.app.github.dev/api/restaurants?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING`,
+      `https://michaelchoudhury-bookish-acorn-r964pg5v5g2p4jj-3003.app.github.dev/api/restaurants?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING`,
       
       );    
 
@@ -26,8 +26,8 @@ const Body = () => {
 
   console.log(json);
 
-  setListOfRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-  setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+  setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  setFilteredRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
   const onlineStatus = useOnlineStatus();
@@ -61,7 +61,7 @@ const Body = () => {
               console.log(searchText);
 
               const filteredRestaurants = listOfRestaurants.filter(
-                (res) => res.data.name.toLowerCase().includes(searchText.toLowerCase())
+                (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
 
               setFilteredRestaurants(filteredRestaurants);
@@ -74,7 +74,7 @@ const Body = () => {
               className="px-4 py-2 bg-gray-100 rounded-lg"
               onClick={() => {
                const filteredRestaurants = listOfRestaurants.filter(
-                 (res) => res.data.avgRating > 4.3
+                 (res) => res.info.avgRating > 4.3
                );
                setFilteredRestaurants(filteredRestaurants);
                console.log(listOfRestaurants);
@@ -96,13 +96,13 @@ const Body = () => {
         <div className="flex flex-wrap">
             {filteredRestaurants.map((restaurant) => (
               <Link
-                key={restaurant.data.id}
-                to={"/restaurants/" + restaurant.data.id}
+              key={restaurant?.info.id}
+              to={"/restaurants/" + restaurant?.info.id}
               >
-              {restaurant.data.promoted ? (
-                <RestaurantCardPromoted resData={restaurant} />
+              {restaurant?.info.promoted ? (
+              <RestaurantCardPromoted resData={restaurant?.info} />
               ) : (
-                <RestaurantCard resData={restaurant} />
+                <RestaurantCard resData={restaurant?.info} />
               )}
               </Link>
             ))}
