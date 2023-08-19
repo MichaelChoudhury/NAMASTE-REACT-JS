@@ -26,8 +26,8 @@ const Body = () => {
 
   console.log(json);
 
-  setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-  setFilteredRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  setListOfRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
   const onlineStatus = useOnlineStatus();
@@ -69,20 +69,20 @@ const Body = () => {
             }}>Search
             </button>
           </div>
-            <div className="m-4 p-4 flex items-center">
-              {/* <button
+            <div className="search m-4 p-4 flex items-center">
+              <button
               className="px-4 py-2 bg-gray-100 rounded-lg"
               onClick={() => {
-               const filteredRestaurants = listOfRestaurants.filter(
-                 (res) => res.info.avgRating > 4.3
+               const filteredList = listOfRestaurants.filter(
+                 (res) => res.info.avgRating > 4.4
                );
-               setFilteredRestaurants(filteredRestaurants);
+               setFilteredRestaurants(filteredList);
                console.log(listOfRestaurants);
  
              }}
              >
               Top Rated Restaurants
-          </button> */}
+          </button>
             </div>
              
             <div className="m-4 p-4 flex items-center">
@@ -99,7 +99,7 @@ const Body = () => {
               key={restaurant?.info.id}
               to={"/restaurants/" + restaurant?.info.id}
               >
-              {restaurant?.info.promoted ? (
+              {restaurant?.info.avgRating > 4.4 ? (
               <RestaurantCardPromoted resData={restaurant?.info} />
               ) : (
                 <RestaurantCard resData={restaurant?.info} />
