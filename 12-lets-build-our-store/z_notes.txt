@@ -1,0 +1,56 @@
+manage state using redux
+redux works in data layer
+redux not mandatory for small and mid-sized applications
+redux is not part of react - separate library
+redux is not the only library - e.g., zustand
+redux makes applications easier to debug - chrome extension - redux dev tools
+React-Redux - library - bridge
+redux toolkit or RTK package - modern standard way
+old redux - complicated, boilerplate code, lots of packages
+store CART info in redux store
+redux store is a large JS object kept in global central place
+accessible by any component
+slices inside redux store - parts/portions of redux store - logical partition - keep data separate
+user slice - cart slice - theme slice
+initially cart is empty array
+can't directly modify cart slice
+write data: when you click on add button, it dispatches an action which calls a reducer function which 
+                                    internally modifies the cart (updates the slice of the redux store)
+function known as reducer
+read data: use a selector to read the data - header/cart component subscribing to the store - is in sync with store
+
+# Redux Toolkit
+ - Install @reduxjs/toolkit and react-redux
+ - Build our store
+ - Connect our store to our app
+ - Slice (cartSlice)
+ - Dispatch (action)
+ - Selector
+
+ configure store then add store to our application
+ 
+redux store provider
+write reducer functions corresponding to the actions
+actions are like small APIs to communicate with redux store, eg, dispatch addItem
+reducer function modifies the data inside the slice
+useSelector is a hook - will give access to the store - subscribe to the store - to the items in the store
+redux uses immer library - work with immutable state
+RTK - either mutate existing state or return new state
+Redux DevTools
+
+
+
+
+ 1:12
+
+ 
+ 
+
+
+
+
+
+
+
+
+
