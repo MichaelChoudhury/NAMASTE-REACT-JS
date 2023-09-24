@@ -1,0 +1,55 @@
+QA testing
+Developer testing
+Manual testing or write code to test - test cases
+many components interacting
+3 types of testing by developer - manual - unit (in isolation), integration (multiple components, events), end to end or e-2-e (user start to end, large-scale, tools such as selennium)
+testing is part of development
+
+React Testing Library (used to be BOM testing library)
+CRA has RTL out of the box
+But we will build on top of parcel
+RTL uses Jest library - js framework
+Babel is a transpiler and Parcel uses Babel behind the scenes - thus can cause conflict between Parcel and Babel
+jsdom - like a browser
+
+
+# Types of testing (developer)
+ - Unit Testing
+ - Integration Testing
+ - End-to-end Testing - e2e testing
+
+ # Setting up Testing in our app
+  - Install React Testing Library
+  - Install Jest
+  - Install Babel dependencies
+  - Configure Babel
+  - Configure Parcel Config file to disable default Babel transpilation
+  - Jest configuration - npx jest --init 
+  - Install jsdom Library
+  - Install @babel/preset-react - to make JSX work in test cases
+  = Include @babel/preset-react inside my babel config 
+  - Install - npm i -D @testing-library/jest-dom 
+  - 
+
+
+ 3:20
+ 
+
+
+
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
