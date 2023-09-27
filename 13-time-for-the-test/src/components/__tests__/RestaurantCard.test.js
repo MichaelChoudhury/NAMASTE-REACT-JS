@@ -6,7 +6,7 @@ import "@testing-library/jest-dom";
 it("should render RestautantCard component with props data", () => {
     render(<RestautantCard resData={MOCK_DATA} />)
 
-    const name = screen.getByText("Asha tiffins");
+    const name = screen.getByText("KFC");
 
     expect(name).toBeInTheDocument();
 });

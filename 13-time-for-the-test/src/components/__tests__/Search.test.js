@@ -30,7 +30,7 @@ it("Should Search Res List for tiffin text input", async () => {
 
         const searchInput = screen.getByTestId("searchInput");
 
-        fireEvent.change(searchInput, { target: { value: "tiffin" } });
+        fireEvent.change(searchInput, { target: { value: "KFC" } });
 
         fireEvent.click(searchButton);
 
@@ -38,7 +38,7 @@ it("Should Search Res List for tiffin text input", async () => {
 
         const cardsAfterSearch = screen.getAllByTestId("resCard");
 
-        expect (cardsAfterSearch.length).toBe(2);
+        expect (cardsAfterSearch.length).toBe(1);
 
         expect(searchButton).toBeInTheDocument();
 })
@@ -60,6 +60,6 @@ it("Should filter Top-Rated Restaurants", async () => {
         fireEvent.click(topRatedButton);
 
         const cardsAfterFilter = screen.getAllByTestId("resCard");
-        expect(cardsAfterFilter.length).toBe(5);
+        expect(cardsAfterFilter.length).toBe(4);
 
 });

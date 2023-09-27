@@ -1,23 +1,24 @@
 {
-    "id": "201224",
-    "name": "Asha tiffins",
-    "cloudinaryImageId": "n15vckntsiboiod3gpco",
-    "locality": "7th Sector",
-    "areaName": "Hsr Layout",
-    "costForTwo": "₹200 for two",
+    "id": "25620",
+    "name": "KFC",
+    "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+    "locality": "Intermediate Ring Road",
+    "areaName": "Ejipura",
+    "costForTwo": "₹400 for two",
     "cuisines": [
-        "Indian",
-        "South Indian",
-        "Beverages"
+        "Burgers",
+        "Biryani",
+        "American",
+        "Snacks",
+        "Fast Food"
     ],
-    "avgRating": 4.4,
-    "veg": true,
+    "avgRating": 4.1,
     "feeDetails": {
-        "restaurantId": "201224",
+        "restaurantId": "25620",
         "fees": [
             {
                 "name": "BASE_DISTANCE",
-                "fee": 4400
+                "fee": 3500
             },
             {
                 "name": "BASE_TIME"
@@ -26,53 +27,33 @@
                 "name": "ANCILLARY_SURGE_FEE"
             }
         ],
-        "totalFee": 4400
+        "totalFee": 3500
     },
-    "parentId": "236243",
-    "avgRatingString": "4.4",
+    "parentId": "547",
+    "avgRatingString": "4.1",
     "totalRatingsString": "10K+",
     "sla": {
-        "deliveryTime": 21,
-        "lastMileTravel": 4,
+        "deliveryTime": 32,
+        "lastMileTravel": 1.5,
         "serviceability": "SERVICEABLE",
-        "slaString": "21 mins",
-        "lastMileTravelString": "4.0 km",
+        "slaString": "32 mins",
+        "lastMileTravelString": "1.5 km",
         "iconType": "ICON_TYPE_EMPTY"
     },
     "availability": {
-        "nextCloseTime": "2023-09-23 15:30:00",
+        "nextCloseTime": "2023-09-27 23:00:00",
         "opened": true
     },
-    "badges": {
-        "imageBadges": [
-            {
-                "imageId": "v1695133679/badges/Pure_Veg111.png",
-                "description": "pureveg"
-            }
-        ]
-    },
+    "badges": {},
     "isOpen": true,
+    "aggregatedDiscountInfoV2": {},
     "type": "F",
     "badgesV2": {
         "entityBadges": {
-            "imageBased": {
-                "badgeObject": [
-                    {
-                        "attributes": {
-                            "description": "pureveg",
-                            "imageId": "v1695133679/badges/Pure_Veg111.png"
-                        }
-                    }
-                ]
-            },
+            "imageBased": {},
             "textBased": {},
             "textExtendedBadges": {}
         }
-    },
-    "aggregatedDiscountInfoV3": {
-        "header": "₹100 OFF",
-        "subHeader": "ABOVE ₹249",
-        "discountTag": "FLAT DEAL"
     },
     "orderabilityCommunication": {
         "title": {},
