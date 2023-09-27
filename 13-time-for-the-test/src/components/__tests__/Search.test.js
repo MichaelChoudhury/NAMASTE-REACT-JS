@@ -43,4 +43,23 @@ it("Should Search Res List for tiffin text input", async () => {
         expect(searchButton).toBeInTheDocument();
 })
 
+it("Should filter Top-Rated Restaurants", async () => {
+    await act(async () => 
+    render(
+        <BrowserRouter>
+            <Body />
+        </BrowserRouter>
+        )
+    );
 
+        const cardsBeforeFilter = screen.getAllByTestId("resCard");  
+    
+        expect(cardsBeforeFilter.length).toBe(9);  
+
+        const topRatedButton = screen.getByRole("button", {name: "Top Rated Restaurants"});
+        fireEvent.click(topRatedButton);
+
+        const cardsAfterFilter = screen.getAllByTestId("resCard");
+        expect(cardsAfterFilter.length).toBe(5);
+
+});
