@@ -18,7 +18,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      `https://michaelchoudhury-bookish-acorn-r964pg5v5g2p4jj-3003.app.github.dev/api/restaurants?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING`,
+      `https://shiny-space-palm-tree-g44j69jqpx2w4pg-3003.app.github.dev/api/restaurants?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING`,
       
       );    
 
